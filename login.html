@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Login Form</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            facebook: '#1877F2',
+            'facebook-bg': ' #F0F2F5',
+          },
+          fontFamily: {
+            'body': 'Helvatica Neue, sans-serif',
+          },
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+</head>
+
+<body class="bg-facebook-bg">
+
+  <div class="container mt-16 xl:my-36 flex flex-wrap justify-center xl:justify-around">
+    <div class="form-title mb-4 text-center xl:self-center xl:text-start">
+      <h1 class="text-facebook font-bold text-5xl xl:text-7xl">facebook</h1>
+      <p class="text-slate-900 text-3xl my-2 hidden xl:block">
+        Facebook helps you connect and share <br> with the people in your life.</p>
+    </div>
+    <div class="form bg-slate-50 w-80 xl:w-96 p-8 rounded-lg shadow-lg text-center flex items-center justify-center">
+      <form action="#">
+        <input type="tel" name="telephone" id="telephone" placeholder="Email or phone number"
+          class="block py-2 xl:py-4 px-2 w-72 xl:w-80 mb-4 border border-slate-400 rounded-lg placeholder-slate-400 focus:outline-facebook">
+        <input type="password" name="password" id="password" placeholder="Password"
+          class="block py-2 xl:py-4 px-2 w-72 xl:w-80 mb-4 border border-slate-400 rounded-lg placeholder-slate-400 focus:outline-facebook">
+        <button type="submit"
+          class="block py-2 xl:py-4 w-full mb-2 rounded-lg bg-facebook hover:bg-sky-600 text-slate-50 font-semibold xl:text-xl xl:font-bold">Log
+          in</button>
+        <a href="#" class="block mb-4 text-facebook text-sm hover:underline">Forgot password?</a>
+        <hr class="border border-slate-200 mt-4 mb-8">
+        <a href="#"
+          class="block py-2 xl:py-4 w-full bg-green-500 hover:bg-green-400 rounded-lg text-slate-50 font-semibold text-sm xl:text-md">
+          Create new account</a>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
